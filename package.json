@@ -1,0 +1,32 @@
+{
+  "name": "lone-exo-apparel",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "web",
+    "mobile"
+  ],
+  "scripts": {
+    "dev:convex": "convex dev",
+    "dev:web": "npm run dev --workspace=web",
+    "dev:mobile": "npm run start:fresh --workspace=mobile",
+    "build:web": "npm run build --workspace=web",
+    "seed": "convex run seed:seedDatabase"
+  },
+  "devDependencies": {
+    "convex": "^1.26.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^11.13.0",
+    "react": "19.2.0",
+    "resend": "^6.7.0",
+    "zod": "^4.3.5"
+  },
+  "overrides": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "expo": "~55.0.0"
+  }
+}
