@@ -10,7 +10,7 @@
     "dev:convex": "convex dev",
     "dev:web": "npm run dev --workspace=web",
     "dev:mobile": "npm run start:fresh --workspace=mobile",
-    "build:web": "npx convex codegen && npm run build --workspace=web",
+    "build:web": "npm run build --workspace=web",
     "seed": "convex run seed:seedDatabase"
   },
   "devDependencies": {
