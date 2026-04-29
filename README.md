@@ -49,7 +49,7 @@ lone-exo-apparel/
 
 - Node.js 18+
 - npm or pnpm
-- Convex account (https://convex.dev)
+- Convex account ([https://convex.dev](https://convex.dev))
 - Stripe account (for payments)
 
 ### Installation
@@ -60,7 +60,7 @@ lone-exo-apparel/
 npm install
 ```
 
-2. Set up Convex:
+1. Set up Convex:
 
 ```bash
 npx convex dev
@@ -68,25 +68,29 @@ npx convex dev
 
 This will prompt you to log in and create a new Convex project.
 
-3. Configure environment variables:
+1. Configure environment variables:
 
 **Root `.env.local`:**
+
 ```
 CONVEX_DEPLOYMENT=<your-convex-deployment>
 ```
 
-**`web/.env.local`:**
+`**web/.env.local`:**
+
 ```
 NEXT_PUBLIC_CONVEX_URL=<your-convex-url>
 NEXT_PUBLIC_URL=http://localhost:3000
 ```
 
-**`mobile/.env.local`:**
+`**mobile/.env.local`:**
+
 ```
 EXPO_PUBLIC_CONVEX_URL=<your-convex-url>
 ```
 
-4. Set up Convex environment variables (in Convex dashboard):
+1. Set up Convex environment variables (in Convex dashboard):
+
 ```
 AUTH_GOOGLE_ID=<google-client-id>
 AUTH_GOOGLE_SECRET=<google-client-secret>
@@ -96,7 +100,7 @@ STRIPE_SECRET_KEY=<stripe-secret-key>
 STRIPE_WEBHOOK_SECRET=<stripe-webhook-secret>
 ```
 
-5. Seed the database:
+1. Seed the database:
 
 ```bash
 npx convex run seed:seedDatabase
@@ -105,16 +109,19 @@ npx convex run seed:seedDatabase
 ### Running the Apps
 
 **Start Convex (keep running):**
+
 ```bash
 npm run dev:convex
 ```
 
 **Start web app:**
+
 ```bash
 npm run dev:web
 ```
 
 **Start mobile app:**
+
 ```bash
 npm run dev:mobile
 ```
@@ -166,11 +173,13 @@ All user-specific data is protected with ownership checks:
 ## Design System
 
 **Brand Colors:**
+
 - Primary: #1a1a1a (Deep Charcoal)
 - Secondary: #f5f0eb (Warm Ivory)
 - Accent: #b76e79 (Rose Gold)
 
 **Typography:**
+
 - Headings: Cormorant Garamond
 - Body: DM Sans
 
