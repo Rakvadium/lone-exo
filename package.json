@@ -11,7 +11,7 @@
     "dev:web": "npm run dev --workspace=web",
     "dev:mobile": "npm run start:fresh --workspace=mobile",
     "build:web": "npm run build --workspace=web",
-    "vercel-build": "convex deploy --cmd \"npm run build:web\" --cmd-url-env-var-name NEXT_PUBLIC_CONVEX_URL",
+    "vercel-build": "convex deploy --cmd \"npm run build --workspace=web\" --cmd-url-env-var-name NEXT_PUBLIC_CONVEX_URL",
     "seed": "convex run seed:seedDatabase"
   },
   "devDependencies": {
